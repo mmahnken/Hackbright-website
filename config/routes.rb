@@ -1,8 +1,9 @@
 HackbrightWebsite::Application.routes.draw do
+  
   get "pages/home"
 
-  get "pages/about"
-
+  get "pages/about" 
+  
   get "pages/community"
 
   get "pages/faq"
@@ -16,6 +17,8 @@ HackbrightWebsite::Application.routes.draw do
   get "pages/apply"
 
   get "pages/employers"
+  
+  root :to => "pages#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
