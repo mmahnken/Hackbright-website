@@ -10,7 +10,7 @@ HackbrightWebsite::Application.routes.draw do
 
   get "pages/dates"
 
-  get "pages/mentor"
+  get "pages/support"
 
   get "pages/press"
 

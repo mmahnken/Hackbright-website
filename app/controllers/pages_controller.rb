@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   def dates
   end
 
-  def mentor
+  def support
   end
 
   def press
