@@ -314,9 +314,8 @@ nav a:visited {
 }
 
 nav a:hover {
-	background: #fb8d7c;
 	border-radius: 4px;
-	color: #464646;
+	color: #000;
 }
 
 .contact-top {
