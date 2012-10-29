@@ -10,7 +10,7 @@ HackbrightWebsite::Application.routes.draw do
 
   get "pages/dates"
 
-  get "pages/support"
+  get "pages/mentor"
 
   get "pages/press"
 
@@ -20,6 +20,7 @@ HackbrightWebsite::Application.routes.draw do
   
   get "pages/testimonials"
   
+  get "pages/get_involved"
   
   root :to => "pages#home"
 

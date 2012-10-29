@@ -474,6 +474,8 @@ p.subheader {
   font-size:16px;
   line-height:20px;
   padding-top:10px;
+  font-style:normal;
+  margin-bottom:50px;
 }
 
 
@@ -603,7 +605,7 @@ p.proj-type {
 }
 
 .portfolio2 img {
-	border: 0px solid #d0d0d0;
+	border: 0px solid #d0d0d0;	
 }
 
 .portfolio2 img:hover {
@@ -627,6 +629,29 @@ p.proj-name3 {
 	text-transform: uppercase;
 	color: #707070;
 }
+
+p.proj-name4 {
+	margin-top: 2px;
+	margin-bottom: 1px;
+	font-size: 14px;
+	line-height: 10px;
+	text-transform: uppercase;
+	color: #707070;
+}
+
+p.proj-name5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	line-height: 10px;
+	color: #707070;
+}
+
+img.proj-name5 {
+	margin-top:px;
+}
+
+
 
 p.proj-type2 {
 	font-size: 11px;
@@ -2357,6 +2382,13 @@ border-radius: 500px;
   padding-left:40px;
 }
 
+.kimber-quote1 p {
+  font-size:24px;
+  line-height:47px;
+  color: #848383;
+  font-style:italic;
+  padding-left:40px;
+}
 .separator .kimber-quote p {
   font-size:30px;
   line-height:47px;
@@ -2390,6 +2422,12 @@ p.proj-type-separator {
   background-image:url('right-quote.png');
   background-repeat:no-repeat;
   }
+  
+.right-quote-testimonial{ 
+    background-image:url('right-quote.png');
+    background-repeat:no-repeat;
+    }
+
   
 .separator-quote{ 
   background-image:url('separator-quote.png');
@@ -2449,3 +2487,26 @@ content: '';
 ul.footer-links {
  display:inline;
  }
+ 
+.main-content {
+ background: white no-repeat;
+ border-bottom: 1px solid white;
+ -moz-box-shadow: 0 0 3px #e1e1e3;
+ -webkit-box-shadow: 0 0 3px #E1E1E3;
+ -o-box-shadow: 0 0 3px #e1e1e3;
+ box-shadow: 0 0 3px #E1E1E3;
+ padding: 25px;
+ }
+ 
+#social-footer {
+  margin-top:-4px;
+  float:right;
+}
+
+.images-around {
+ margin-top:30px;
+}
+
+p.images-around {
+ padding-top:500px;
+}

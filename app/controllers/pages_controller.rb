@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   def dates
   end
 
-  def support
+  def mentor
   end
 
   def press
@@ -27,6 +27,9 @@ class PagesController < ApplicationController
   end
   
   def testimonials
+  end
+  
+  def get_involved
   end
   
 end
