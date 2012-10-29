@@ -340,7 +340,7 @@ nav a:hover {
 #intro {
 	background: url(bg-lauren-med.png) no-repeat;
 	background-height:100%;
-	background-width:10px;
+	background-width:100%;
 	position: relative;
 	z-index: 1;
 	height: 655px;
@@ -465,6 +465,17 @@ p.subheader {
 .process2 {
 	margin-top: 45px;
 }
+
+.testimonials1 {
+	margin-top: 0px;
+}
+
+.testimonials1 .kimber-quote p{
+  font-size:16px;
+  line-height:20px;
+  padding-top:10px;
+}
+
 
 .process-separator {
   margin-top:25px;
@@ -603,6 +614,15 @@ p.proj-name2 {
 	margin-top: 2px;
 	margin-bottom: 1px;
 	font-size: 13px;
+	line-height: 10px;
+	text-transform: uppercase;
+	color: #707070;
+}
+
+p.proj-name3 {
+	margin-top: 2px;
+	margin-bottom: 1px;
+	font-size: 16px;
 	line-height: 10px;
 	text-transform: uppercase;
 	color: #707070;
@@ -886,7 +906,8 @@ p.t-desc {
 	background: url(intro-bg.jpg) repeat fixed;
 	position: relative;
 	z-index: 200;
-	margin-top: -18px;
+	margin-top: 0px;
+	height:100%;
 	text-align: center;
 }
 
@@ -899,8 +920,27 @@ p.t-desc {
 	filter: dropshadow(color=#666666, offx=1, offy=1);
 }
 
+.footer a {
+	color: #5f4203;
+	text-decoration:none;
+	font-weight: 600;
+	text-shadow: 0px 0px 0px rgba(0,0,0,.6);
+	filter: dropshadow(color=#666666, offx=1, offy=1);
+}
+
+.footer ul {
+  margin:10px 0 20px 0;
+}
+
 .footer li {
   display:inline;
+  color: #fff;
+  font-size:16px;
+	font-weight: 600;
+	padding: 0 20px 0 0;
+	margin: 0;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.6);
+	filter: dropshadow(color=#666666, offx=1, offy=1);
 }
 
 
@@ -2386,3 +2426,26 @@ color: #555;
 -moz-border-radius: 3px;
 border-radius: 3px;
 }
+
+.row-fluid {
+width: 100%;
+}
+
+
+.row-fluid::before, .row-fluid::after {
+display: table;
+content: '';
+}
+
+.row-fluid::after {
+clear: both;
+}
+
+.row-fluid::before, .row-fluid::after {
+display: table;
+content: '';
+}
+
+ul.footer-links {
+ display:inline;
+ }

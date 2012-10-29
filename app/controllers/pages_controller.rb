@@ -25,4 +25,8 @@ class PagesController < ApplicationController
 
   def employers
   end
+  
+  def testimonials
+  end
+  
 end
