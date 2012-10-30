@@ -30,6 +30,10 @@ HackbrightWebsite::Application.routes.draw do
   
   get "pages/placement_agreement"
   
+  get "pages/talent"
+  
+  get "pages/sponsor"
+  
   root :to => "pages#home"
 
   # The priority is based upon order of creation:
