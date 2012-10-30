@@ -35,6 +35,7 @@
     .container .one.columns                     { width: 40px;  }
     .container .two.columns                     { width: 100px; }
     .container .three.columns                   { width: 160px; }
+    .container .threehalf.columns               { width: 172px; margin-bottom:32px; }
     .container .four.columns                    { width: 220px; margin-bottom:40px; }
     .container .five.columns                    { width: 280px; }
     .container .six.columns                     { width: 340px; }
@@ -88,6 +89,7 @@
         .container .one.columns                     { width: 28px; }
         .container .two.columns                     { width: 76px; }
         .container .three.columns                   { width: 124px; }
+        .container .threehalf.columns               { width: 132px; }
         .container .four.columns                    { width: 172px; }
         .container .five.columns                    { width: 220px; }
         .container .six.columns                     { width: 268px; }
@@ -138,6 +140,7 @@
         .container .one.columns,
         .container .two.columns,
         .container .three.columns,
+        .container .threehalf.columns,
         .container .four.columns,
         .container .five.columns,
         .container .six.columns,
