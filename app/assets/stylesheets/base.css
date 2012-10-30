@@ -122,6 +122,10 @@
 	img.scale-with-grid {
 		max-width: 100%;
 		height: auto; }
+		
+	iframe.scale-with-grid {
+  	max-width: 100%;
+  }
 
 
 /* #Buttons

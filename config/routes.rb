@@ -22,6 +22,14 @@ HackbrightWebsite::Application.routes.draw do
   
   get "pages/get_involved"
   
+  get "pages/mentor"
+  
+  get "pages/speaker"
+  
+  get "pages/recruit"
+  
+  get "pages/placement_agreement"
+  
   root :to => "pages#home"
 
   # The priority is based upon order of creation:

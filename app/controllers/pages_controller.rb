@@ -32,4 +32,16 @@ class PagesController < ApplicationController
   def get_involved
   end
   
+  def mentor
+  end
+  
+  def speaker
+  end
+  
+  def recruit
+  end
+  
+  def placement_agreement
+  end
+  
 end

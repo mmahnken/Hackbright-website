@@ -337,13 +337,14 @@ nav a:hover {
 ================================================== */
 
 #intro {
-	background: url(bg-lauren-med.png) no-repeat;
+	background: url(bg-lauren-med.png) no-repeat center;
 	background-height:100%;
 	background-width:100%;
 	position: relative;
 	z-index: 1;
 	height: 655px;
 	margin-top: -85px;
+  text-align:center;
 }
 
 .title {
@@ -603,6 +604,21 @@ p.proj-type {
 	text-align: center;
 }
 
+.portfolio3 img {
+	border: 0px solid #d0d0d0;	
+}
+
+.portfolio3 img:hover {
+	opacity: 1;
+}
+
+
+.portfolio3 p {
+	text-align: left;
+	line-height:17px;
+	font-size:14px;
+}
+
 .portfolio2 img {
 	border: 0px solid #d0d0d0;	
 }
@@ -783,6 +799,13 @@ p.proj-type2 {
 	border-bottom: 1px dotted #dadada;
 }
 
+.placement-point {
+  font-weight: bold;
+}
+
+.placement-time {
+  font-style: italic;
+}
 
 /***** team *****/
 
@@ -1340,6 +1363,7 @@ a.btn {
 .logo-bar-logos-sprite,.logo-bar .inner1 ul li .logo-bar-logos-amazon,.logo-bar .inner1 ul li .logo-bar-logos-ogilvy,.logo-bar .inner1 ul li .logo-bar-logos-sony,.logo-bar .inner1 ul li .logo-bar-logos-unilever,.logo-bar .inner1 ul li .logo-bar-logos-universal,.logo-bar .inner1 ul li .logo-bar-logos-verizon_wireless,.logo-bar .inner1 ul li .logo-bar-logos-virgin {
 	background:url(logo-bar-logos.png) no-repeat;
 }
+
 .logo-bar {
 	background:url(logo-bar-gradient.png) top left repeat-x;
 	height:90px;
@@ -1360,7 +1384,7 @@ a.btn {
 				float:right;
 				text-align:center;
 				margin-top:15px;
-  		  margin-right:85px;
+  		  margin-right:3.5%;
   		  margin-bottom:0px;
   		  margin-left:0px;
 			}
@@ -2509,3 +2533,8 @@ ul.footer-links {
 p.images-around {
  padding-top:500px;
 }
+
+.sponsor-row {
+  margin-bottom:20px;
+}
+
