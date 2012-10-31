@@ -1,40 +1,43 @@
 HackbrightWebsite::Application.routes.draw do
   
-  get "pages/home"
+  get "/home" => "pages#home"
+  
+  get "/about" => "pages#about"
+  
+  get "/community" => "pages#community"
+  
+  get"pages/community"
 
-  get "pages/about" 
-  
-  get "pages/community"
+  get "/faq" => "pages#faq"
 
-  get "pages/faq"
+  get "/dates" => "pages#dates"
 
-  get "pages/dates"
+  get "/support" => "pages#support"
 
-  get "pages/support"
+  get "/press" => "pages#press"
 
-  get "pages/press"
+  get "/apply" => "pages#apply"
 
-  get "pages/apply"
-
-  get "pages/employers"
+  get "/employers" => "pages#employers"
   
-  get "pages/testimonials"
+  get "/testimonials" => "pages#testimonials"
   
-  get "pages/get_involved"
+  get "/get_involved" => "pages#get_involved"
   
-  get "pages/mentor"
+  get "/mentor" => "pages#mentor"
   
-  get "pages/speaker"
+  get "/speaker" => "pages#speaker"
   
-  get "pages/recruit"
+  get "/recruit" => "pages#recruit"
   
-  get "pages/placement_agreement"
+  get "/placement_agreement" => "pages#placement_agreement"
   
-  get "pages/talent"
+  get "/talent" => "pages#talent"
   
-  get "pages/sponsor"
+  get "/sponsor" => "pages#sponsor"
   
   root :to => "pages#home"
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
