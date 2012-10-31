@@ -638,6 +638,15 @@ p.proj-name2 {
 	color: #707070;
 }
 
+p.selina {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 13px;
+	line-height: 12px;
+	text-transform: uppercase;
+	color: #707070;
+}
+
 p.proj-name3 {
 	margin-top: 2px;
 	margin-bottom: 1px;
