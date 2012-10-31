@@ -404,7 +404,9 @@ nav a:hover {
 ================================================== */
 
 #intro2 {
-  background: url(bg-community.png) no-repeat;
+  background: url(bg-community.png) no-repeat center;
+	background-height:100%;
+	background-width:100%;
   position: relative;
   height: 300px;
   margin-top: -100px;
