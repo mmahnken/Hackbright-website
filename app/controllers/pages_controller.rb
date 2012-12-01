@@ -50,4 +50,7 @@ class PagesController < ApplicationController
   def sponsor
   end
   
+  def hb_partner_companies
+  end
+  
 end

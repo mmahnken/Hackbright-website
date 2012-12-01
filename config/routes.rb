@@ -34,6 +34,8 @@ HackbrightWebsite::Application.routes.draw do
   
   get "/talent" => "pages#talent"
   
+  get "/hb_partner_companies" => "pages#hb_partner_companies"
+  
   get "/sponsor" => "pages#sponsor"
   
   root :to => "pages#home"
