@@ -17,8 +17,21 @@
 						<li><%= link_to "About", about_path %></li>
 						<li><%= link_to "Community", community_path %></li>
 						<li><%= link_to "Testimonials", testimonials_path %></li>
-						<li><%= link_to "FAQ", faq_path %></li>
-						<li><%= link_to "Get Involved", get_involved_path %></li>
+						<li class="dropdown">
+							<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+								<li><%= link_to "General", faq_path %></li>
+                <li><%= link_to "Who's Hiring from Hackbright?", hb_partner_companies_path %></li>
+              </ul>
+						</li>
+						<li class="dropdown">
+							<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Get Involved <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+	              <li><%= link_to "General", get_involved_path %></li>
+								<li><%= link_to "We're Hiring!", jobs_path %></li>
+              </ul>
+						</li>
+						
 						<li><%= link_to "Apply Today!", apply_path, :class => "btn large green apply-button" %></li>
 					</ul>
 				</div> <!-- end nine columns -->

@@ -53,4 +53,15 @@ class PagesController < ApplicationController
   def hb_partner_companies
   end
   
+  def jobs
+  end
+  
+  def hir
+  end
+  
+  def instructor
+  end
+  
+  
+  
 end
