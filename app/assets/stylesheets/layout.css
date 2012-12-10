@@ -1025,6 +1025,7 @@ p.t-desc {
 
 .footer .newsletter_email input {
   width: 150px;
+  margin: 5px 0px;
 }
 
 .footer .newsletter_email_button {
