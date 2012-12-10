@@ -2174,7 +2174,7 @@
 
 }(window.jQuery);
 
-
+/* Adding javascript post for newsletter signup */
 $(function() {
   $(".newsletter_email_button input").click(function() {
     var email = $(".newsletter_email input").val();
