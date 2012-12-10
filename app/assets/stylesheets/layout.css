@@ -987,7 +987,7 @@ p.t-desc {
 }
 
 .footer ul {
-  margin:10px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 .footer li {
@@ -1001,7 +1001,43 @@ p.t-desc {
 	filter: dropshadow(color=#666666, offx=1, offy=1);
 }
 
+.footer li.social {
+  padding: 0 3px 0 0;
+  position: relative;
+  top: 5px;  
+}
 
+.footer li.social_twitter {
+  position: relative;
+  top: 3px; 
+  padding: 0px;
+}
+
+.footer li.social_twitter iframe {
+  width: 90px !important;
+}
+
+.footer .newsletter_email {
+  padding: 0px;
+  position: relative;
+  top: -2px;
+}
+
+.footer .newsletter_email input {
+  width: 150px;
+}
+
+.footer .newsletter_email_button {
+  padding: 0px;
+}
+
+.footer .newsletter_email_button input {
+  margin: 0px;
+  position: relative;
+  top: -2px;
+  left: -5px;
+  padding: 10px;
+}
 
 /* #Media Queries
 ================================================== */
@@ -2540,7 +2576,6 @@ ul.footer-links {
  
 #social-footer {
   margin-top:-4px;
-  float:right;
 }
 
 .footer #social-footer li {
@@ -2929,7 +2964,6 @@ transition: 0.2s;
 /* Sharing Buttons */
 
 #hackstar-share-fb {
-  float: right;
   margin-left:3px; 
   margin-right:3px;
 }
