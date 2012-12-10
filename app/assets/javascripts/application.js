@@ -2173,3 +2173,13 @@
 
 
 }(window.jQuery);
+
+
+$(function() {
+  $(".newsletter_email_button input").click(function() {
+    var email = $(".newsletter_email input").val();
+    $.post('/visitor/create', { 'email' : email }, function () {
+      alert("Thanks");
+    });
+  });
+});

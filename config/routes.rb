@@ -1,5 +1,8 @@
 HackbrightWebsite::Application.routes.draw do
   
+
+  match "/visitor/create" => "visitor#create", :via => 'post' 
+
   get "/home" => "pages#home"
   
   get "/about" => "pages#about"
