@@ -2181,8 +2181,11 @@ $(function() {
     if (email === '') {
       return false;
     }
+    
     $.post('/visitor/create', { 'email' : email }, function () {
-      alert("Thanks");
+      alert("Thanks for signing up for the Hackbright Newsletter!");
+      /*put modal code here*/
     });
+    $(".newsletter_email input").val('');
   });
 });
