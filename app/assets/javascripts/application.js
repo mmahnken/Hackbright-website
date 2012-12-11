@@ -2178,6 +2178,9 @@
 $(function() {
   $(".newsletter_email_button input").click(function() {
     var email = $(".newsletter_email input").val();
+    if (email === '') {
+      return false;
+    }
     $.post('/visitor/create', { 'email' : email }, function () {
       alert("Thanks");
     });
