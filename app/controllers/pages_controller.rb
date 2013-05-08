@@ -62,6 +62,9 @@ class PagesController < ApplicationController
   def instructor
   end
   
+  def moms_in_tech
+  end
+  
   
   
 end
