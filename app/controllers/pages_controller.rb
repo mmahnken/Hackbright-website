@@ -65,6 +65,7 @@ class PagesController < ApplicationController
   def moms_in_tech
   end
   
-  
+  def mit_apply
+  end
   
 end

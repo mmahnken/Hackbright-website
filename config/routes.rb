@@ -49,6 +49,8 @@ HackbrightWebsite::Application.routes.draw do
   
   get "/moms_in_tech" => "pages#moms_in_tech"
   
+  get "/mit_apply" => "pages#mit_apply"
+  
   root :to => "pages#home"
   
 
