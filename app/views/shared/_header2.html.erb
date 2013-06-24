@@ -1,0 +1,47 @@
+
+		<div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 85px; ">	
+		<header style="position: fixed; top:-15px;" class="is-sticky">
+
+			<div class="topbar">
+
+					<div class="sixteen columns" style="margin-left:5%">
+						<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	          
+						<nav >
+								<ul>
+									<li style="float:left;"><a href="http://www.hackbrightacademy.com"><img src="http://www.hackbrightacademy.com/assets/Hackbright.png" alt="Hackbright"></a></li>
+								</ul>
+								<ul style="float:right;margin-top:3px;">	
+									<li><%= link_to "About", about_path %></li>
+									<li><%= link_to "Community", community_path %></li>
+									<li><%= link_to "Recruit Women", recruit_path %></li>
+
+									<li class="dropdown">
+										<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+			              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+											<li><%= link_to "General", faq_path %></li>
+			                <li><%= link_to "Who's Hiring from Hackbright?", hb_partner_companies_path %></li>
+			              </ul>
+									</li>
+									<li class="dropdown">
+										<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Get Involved <b class="caret"></b></a>
+			              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+				              <li><%= link_to "General", get_involved_path %></li>
+											<li><%= link_to "We're Hiring!", jobs_path %></li>
+			              </ul>
+									</li>
+									<li><%= link_to "Apply Today!", apply_path, :class => "btn-flat btn-1 btn-1a" %></li>
+								</ul>
+						</nav>
+
+				</div>
+			</div> <!-- end topbar -->
+
+			<div class="container">
+				<div class="sixteen columns">
+
+				</div> <!-- end sixteen columns -->
+			</div> <!-- end container -->
+
+		</header> <!-- end header -->
+		</div>

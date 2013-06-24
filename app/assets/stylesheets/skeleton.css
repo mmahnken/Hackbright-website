@@ -30,10 +30,14 @@
     .column.alpha, .columns.alpha               { margin-left: 0; }
     .column.omega, .columns.omega               { margin-right: 0; }
 
+
+
+
     /* Base Grid */
     .container .one.column,
     .container .one.columns                     { width: 40px;  }
     .container .two.columns                     { width: 100px; }
+    .container .twohalf.columns                     { width: auto; margin-left:14px; margin-right:14px; }
     .container .three.columns                   { width: 160px; }
     .container .threehalf.columns               { width: 172px; margin-bottom:32px; }
     .container .four.columns                    { width: 220px; margin-bottom:40px; }

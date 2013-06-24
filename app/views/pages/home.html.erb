@@ -1,30 +1,39 @@
-<div id="intro">
-	<div class="title">
-	
-	</div> <!-- end title -->
-	
+<div class="intro">
 </div> <!-- end intro -->
 
 <div class="title-helper scale-with-grid">
 	<div class="container">
-	<h1>Programming Fellowship for Women </h1>
-		<p>10-weeks. Become a developer. Exclusively for women.</p><a href="#services" style="margin-top:-135px; margin-left:775px" class="btn xlarge blue">Learn More</a>
+		<div class="twelve columns"><h1>Engineering Fellowship for Women </h1>
+			<p>Become a software engineer. Exclusively for women.</p>
+		</div>
+		<div class="four columns">	
+			<a href="#services"class="btn-flat btn-blue" style="margin-top:25px">Learn More</a>
+		</div>
 	</div>
 </div>
 
-
-	<div class="logo-bar scale-with-grid">
-  <div class="inner1">
+<div class="color-2 scale-with-grid" id="press-logos">
 	<div class="container">
-    <ul>
-        <li><em class="logo-bar-logos-sony"></em></li>
-        <li><em class="logo-bar-logos-virgin"></em></li>
-        <li><em class="logo-bar-logos-ogilvy"></em></li>
-        <li><em class="logo-bar-logos-verizon_wireless"></em></li>
-        <li><em class="logo-bar-logos-universal"></em></li>
-    </ul>
+		
+		<div class="twohalf columns">
+			<img class="scale-with-grid"src="/assets/forbes-logo.png" alt="Forbes Logo">
 		</div>
-  </div>
+		<div class="twohalf columns">
+			<img class="scale-with-grid"src="/assets/TechCrunch.png" alt="TechCrunch Logo">
+		</div>
+		<!--<div class="twohalf columns">
+			<img src="/assets/gigaom.png" alt="GigaOm Logo">
+		</div>-->
+		<div class="twohalf columns">
+			<img class="scale-with-grid"src="/assets/venturebeat.png" alt="VentureBeat Logo">
+		</div>
+		<div class="twohalf columns">
+			<img class="scale-with-grid"src="/assets/tnw.png" alt="TheNextWeb Logo">
+		</div>
+		<div class="twohalf columns">
+			<img src="/assets/women2.png" alt="Women2.0 Logo">
+		</div>
+	</div>
 </div>
 
 <div id="services">
@@ -36,41 +45,60 @@
 		</div> <!-- end sixteen columns -->
 		
 		<div class="portfolio">
-			
-			<div class="one-third column">
+
+<!--			<div class="one-third column">
 					<p><span style="font-size:32px">Community</span></p>
-					<a href="http://www.hackbrightacademy.com/about">
-					<div class="photo-stack">
-						<ul class="opportunity-pic">
-							<li class="community-pic"></li>
-						</ul>​
-					</div></a> <!-- end photo-stack column -->
-					Join a growing alumni network of women engineers in Silicon Valley.  Get plugged-in to the Silicon Valley eco-system.  <%= link_to "Learn More >>", about_path %>
-					</br ></br >
-			</div> <!-- end one-third column -->
+					<script type="text/javascript" src="jquery-1.4.2.min.js"></script> 
+
+					<div id="ytapiplayer2" style="display:none;">
+					<object width="300" height="197">
+						<param name="movie" value="http://www.youtube.com/v/Rri0kZsIMIc?version=3&amp;hl=en_US&autoplay=1">
+						</param>
+						<param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always">
+						</param>
+						<embed src="http://www.youtube.com/v/Rri0kZsIMIc?version=3&amp;hl=en_US&autoplay=1" type="application/x-shockwave-flash" width="300" height="197" allowscriptaccess="always" allowfullscreen="true">
+						</embed>
+					</object>
+
+					</div>
+					<img src="assets/community-2.png" id="imageID" />
+					<script type="text/javascript">
+					$('#imageID').click(function() {
+					$('#ytapiplayer2').show();
+					$('#imageID').hide();
+					});
+					</script>						
+						<div class="panel">
+				      <p>Join a growing alumni network of women engineers in Silicon Valley.  Get plugged-in to the Silicon Valley eco-system.</p>
+				    </div>
+			</div> (end one-third column) 
+		-->
+		<div class="one-third column">
+				<p><span style="font-size:32px">Community</span></p>
+
+				<iframe width="360" height="203" src="http://www.youtube.com/embed/gzDFmPlp4PM" frameborder="0" allowfullscreen></iframe>
+					<div class="panel">
+			      <p>We provide training and job placement resources for all of our students.  The majority of our graduates go on to work as software engineers.</p>
+			    </div>
+		</div> <!-- end one-third column -->
 			
 			<div class="one-third column">
 				<p><span style="font-size:32px">Mentorship</span></p>
-				<a href="http://www.hackbrightacademy.com/about">
-				<div class="photo-stack">
-					<ul class="community-pic">
-						<li class="czf-teach"></li>
-					</ul>​
-				</div></a> <!-- end photo-stack column -->
-				Our team is comprised of passionate industry experts and some of the top instructors in the world.  <%= link_to "Learn More >>", about_path %></br ></br >
+				<img src="assets/mentorship.png" />
+				
+				<div class="panel">
+				<p>Our team is comprised of passionate industry experts and some of the top instructors in the world.<br /><br /></p>
+				</div>
 			</div> <!-- end one-third column -->
-			
+				
 				<div class="one-third column">
-					<p><span style="font-size:32px">Opportunities</span></p>
-					<a href="http://www.hackbrightacademy.com/about">
-					<div class="photo-stack">
-						<ul class="czf-teach">	
-					    <li class="opportunity-pic"></li>
-						</ul>​
-					</div></a> <!-- end photo-stack column -->
-					We provide training and job placement resources for all of our students.  The majority of our graduates go on to work as software engineers. <%= link_to "Learn More >>", about_path %>
+						<p><span style="font-size:32px">Opportunities</span></p>
+
+						<iframe width="360" height="203" src="http://www.youtube.com/embed/P6WO4yjMw9s" frameborder="0" allowfullscreen></iframe>
+							<div class="panel">
+					      <p>We provide training and job placement resources for all of our students.  The majority of our graduates go on to work as software engineers.</p>
+					    </div>
 				</div> <!-- end one-third column -->
-		
 
 				</div> <!-- end container -->
 			</div> <!-- end contact -->		
@@ -80,14 +108,13 @@
 			<div class="container">	
 				<div class="portfolio2">
 				<div class="sixteen columns">
-					<h3><span class="line"></span>Facebook "Moms in Tech" Sponsorship<span class="line"></span></h3>
+					<h3><span class="line"></span>Presented by Facebook<span class="line"></span></h3>
 					</br >
-					<p>Facebook is teaming up with Hackbright to provide sponsorship for Moms in Tech who qualify for the Hackbright Academy Programming Fellowship.  For Summer 2013 details, click below.</br></br><a href="http://www.hackbrightacademy.com/moms_in_tech" class="btn xlarge blue">Moms in Tech Sponsorship</a></p>
+					<p>Facebook is teaming up with Hackbright to provide sponsorship for Moms in Tech who qualify for the Hackbright Academy Programming Fellowship.  For Summer 2013 details, click below.</br></br><a href="http://www.hackbrightacademy.com/moms_in_tech" class="btn-flat xlarge btn-blue">Moms in Tech Sponsorship</a></p>
 				</div> <!-- end portfolio2 -->
 			</div> <!-- end container -->
 		</div> <!-- end sixteen columns -->
 		</div><!-- end work -->
-		
 		
 		
 		<div id="work">
@@ -104,15 +131,16 @@
 						<p class="proj-name2">Facebook</p>
 						<p class="proj-type2">Scholarship Sponsor</p>
 					</div> <!-- end four columns -->
+					
 					<div class="threehalf columns">
-							<img src="/assets/heroku.png" class="scale-with-grid img-circle" alt="" />
-						<p class="proj-name2">Heroku</p>
+							<img src="/assets/zendesk.png" class="scale-with-grid img-circle" alt="" />
+						<p class="proj-name2">Zendesk</p>
 						<p class="proj-type2">Scholarship Sponsor</p>
 					</div> <!-- end four columns -->
 					
 					<div class="threehalf columns">
-							<img src="/assets/daily-muse.png" class="scale-with-grid img-circle" alt="" />
-						<p class="proj-name2">The Daily Muse</p>
+							<img src="/assets/heroku.png" class="scale-with-grid img-circle" alt="" />
+						<p class="proj-name2">Heroku</p>
 						<p class="proj-type2">Scholarship Sponsor</p>
 					</div> <!-- end four columns -->
 					

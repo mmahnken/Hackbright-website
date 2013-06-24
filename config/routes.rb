@@ -35,7 +35,7 @@ HackbrightWebsite::Application.routes.draw do
   
   get "/placement_agreement" => "pages#placement_agreement"
   
-  get "/talent" => "pages#talent"
+  get "/partner" => "pages#partner"
   
   get "/hb_partner_companies" => "pages#hb_partner_companies"
   

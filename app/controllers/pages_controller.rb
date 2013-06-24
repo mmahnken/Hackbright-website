@@ -44,7 +44,7 @@ class PagesController < ApplicationController
   def placement_agreement
   end
   
-  def talent
+  def partner
   end
   
   def sponsor

@@ -1,45 +1,32 @@
-<div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 85px; ">	
-<header style="position: fixed; top:0;" class="is-sticky">
+
+<div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky">	
+<header style="position: fixed;" class="is-sticky">
 
 	<div class="topbar">
-		<div class="container">
-			<div class="ten columns">
-				<a href="http://www.hackbrightacademy.com"><p class="logo"></p></a>
-			</div>
-			
+
+			<div class="sixteen columns" style="margin-left:3%">        
+				<nav >
+						<ul>
+							<li style="float:left;"><a href="http://www.hackbrightacademy.com"><img src="assets/Hackbright.png" alt="Hackbright" style="scale-with-grid"></a></li>
+						</ul>
+						<ul style="float:right;margin-top: 0px;">	
+							<li><%= link_to "About", about_path %></li>
+							<li><%= link_to "Community", community_path %></li>
+							<li><%= link_to "Employers", employers_path %></li>
+							<li><%= link_to "FAQ", faq_path %></li>
+							<li><%= link_to "Get Involved", get_involved_path %></li>
+							<li><%= link_to "Apply Today!", apply_path, :class => "btn-flat btn-red" %></li>
+						</ul>
+				</nav>
+
 		</div>
 	</div> <!-- end topbar -->
 
 	<div class="container">
 		<div class="sixteen columns">
-			<nav style="position:absolute;float:right;">
-					<ul>
-						<li><%= link_to "About", about_path %></li>
-						<li><%= link_to "Community", community_path %></li>
-						<li><%= link_to "Testimonials", testimonials_path %></li>
-						<li class="dropdown">
-							<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-								<li><%= link_to "General", faq_path %></li>
-                <li><%= link_to "Who's Hiring from Hackbright?", hb_partner_companies_path %></li>
-              </ul>
-						</li>
-						<li class="dropdown">
-							<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Get Involved <b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-	              <li><%= link_to "General", get_involved_path %></li>
-								<li><%= link_to "We're Hiring!", jobs_path %></li>
-              </ul>
-						</li>
-						
-						<li><%= link_to "Apply Today!", apply_path, :class => "btn large green apply-button" %></li>
-					</ul>
-				</div> <!-- end nine columns -->
-				</div> <!-- end seven columns -->
-			</nav>
 
 		</div> <!-- end sixteen columns -->
 	</div> <!-- end container -->
-	
+
 </header> <!-- end header -->
 </div>
