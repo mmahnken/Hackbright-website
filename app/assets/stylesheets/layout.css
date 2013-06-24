@@ -566,11 +566,12 @@ nav a:hover {
 }
 
 #intro-fb {
-  background: url(fb-background.jpg) no-repeat center;
+  background: url(fb-background-mom.png) no-repeat center;
 	background-height:100%;
 	background-width:100%;
   position: relative;
   height: 300px;
+  background-size:cover;
 }
 #intro2 .title {
 	padding-top: 151px;
