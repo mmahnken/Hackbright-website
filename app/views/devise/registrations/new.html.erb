@@ -1,0 +1,38 @@
+<div id="intro2">
+	<div class="title scale-with-grid">
+		<h1 class="small">Sign Up</h1>
+		</div> <!-- end title -->
+</div> <!-- end intro -->
+<div class="jagged"></div>
+	<div id="services">
+	<div class="container">
+	</div> <!-- end container -->
+	<div class="clear"></div>
+
+
+	<div id="work">
+		<div class="container">	
+			<div class="portfolio2">
+
+
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :email %>
+  <%= f.email_field :email %></div>
+  <br />
+	<div><%= f.label :password %>
+  <%= f.password_field :password %></div>
+	<br />
+  <div><%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %></div>
+	<br />
+  <div><%= f.submit "Sign up" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+		</div> <!-- end portfolio2 -->
+	</div> <!-- end container -->
+</div> <!-- end work -->
+

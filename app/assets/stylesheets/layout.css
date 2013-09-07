@@ -3239,3 +3239,29 @@ border-radius: 0px 0px 5px 5px;
 
 .home-image img{
 }
+
+/*ALERT*/
+
+.alert {
+padding: 8px 35px 8px 14px;
+margin-bottom: 20px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+background-color: #fcf8e3;
+border: 1px solid #fbeed5;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+color: #c09853;
+font-weight: bold;
+}
+
+.close {
+float: right;
+cursor:pointer;
+font-size:20px;
+font-weight: bold;
+color: #000000;
+text-shadow: 0 1px 0 #ffffff;
+opacity: 0.2;
+filter: alpha(opacity=20);
+}

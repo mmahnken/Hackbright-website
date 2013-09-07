@@ -17,17 +17,42 @@
 							<li><%= link_to "FAQ", faq_path %></li>
 							<li><%= link_to "Get Involved", get_involved_path %></li>
 							<li><%= link_to "Apply Today!", apply_path, :class => "btn-flat btn-red" %></li>
+							<% if user_signed_in? %>
+								<li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete, :class => "btn-flat btn-blue" %></li>
+							<% end %>		
+							
+							
 						</ul>
 				</nav>
 
 		</div>
+			
 	</div> <!-- end topbar -->
 
-	<div class="container">
-		<div class="sixteen columns">
 
-		</div> <!-- end sixteen columns -->
+	<div class="container">
+		<% if notice %>
+		<br/><br/><br/><br/><br/>
+		<div class="alert">
+			<%= notice %>
+			<a class="close" data-dismiss="alert">&times;</a>
+		</div>
+		<% end %>
+		
+		<% if alert %>
+		<br/><br/><br/><br/><br/>
+		<div class="alert">
+			<%= alert %>
+			<a class="close" data-dismiss="alert">&times;</a>
+		</div>
+		<% end %>	
 	</div> <!-- end container -->
+	
+	
+
 
 </header> <!-- end header -->
+
+
 </div>
+
