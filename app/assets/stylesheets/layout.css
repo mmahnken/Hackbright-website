@@ -498,6 +498,17 @@ nav a:hover {
   background-size:cover;
 }
 
+.intro-home {
+	background-height:100%;
+	background-width:100%;
+	position: relative;
+	z-index: 800;
+	height: 70px;
+  text-align:center;
+  background-size:cover;
+}
+
+
 .intro .scale-with-grid {
 	max-width: 100%;
 	height: auto; 
@@ -526,10 +537,9 @@ nav a:hover {
 .title-helper {
   background: rgba(0, 0, 0, .55);
   width: 100%;
-  height: auto;
   position: inherit;
   z-index: 4;
-  margin-top:-146px;
+  margin-top:-100px;
 }  
 
 .title-helper h1 {
@@ -3264,4 +3274,109 @@ color: #000000;
 text-shadow: 0 1px 0 #ffffff;
 opacity: 0.2;
 filter: alpha(opacity=20);
+}
+
+/* alum-tiles */
+
+.container-home {
+  width:1420px;
+}
+
+.alum-tiles {
+}
+
+.alum-tiles img {
+  margin-right:0px;
+  margin-bottom:-49px;
+  height:142px;
+  opacity:0.5;
+}  
+
+.alum-tiles img:hover {
+  opacity:1;
+  filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.alum-tiles li .text {
+position:relative;
+visibility:hidden;
+margin-top:-19px;
+color:white;
+font-size:12px;
+text-align:left;
+margin-left:3px;
+line-height:14px;
+cursor:default;
+font-weight:bold;
+}
+
+.talent-row li{
+  float:left;
+  margin-bottom:0px;
+}
+.alum-tiles li:hover .text  {
+visibility:visible;
+}
+
+.talent-row{
+width: 100%;
+height: 100%;
+clear: both;
+z-index: 10;
+}
+
+.talent-row .talent-col img{
+}
+
+.talent-col {
+float: left;
+width: 142px;
+height: 100%;
+
+}
+
+.hero-content {
+width: 834px;
+}
+
+.hero-content {
+float: left;
+padding: 18px 0px 0 18px;
+}
+
+.hero-content {
+text-align: center;
+}
+
+.hero-content h1 {
+font-size: 40px;
+font-weight: 700;
+color: #fff;
+text-transform: none;
+text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+filter: dropshadow(color=#666666, offx=2, offy=2);
+margin-bottom: 15px;
+}
+
+.hero-content p {
+font-size: 24px;
+font-weight: 700;
+color: #fff;
+text-transform: none;
+text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+filter: dropshadow(color=#666666, offx=2, offy=2);
+margin-bottom: 30px;
+}
+
+.pull-right {
+float: right !important;
+}
+
+/*Alum hover */
+#alum {
+  
+}
+
+#alum:hover #overlay {
+  opacity:1;
 }
