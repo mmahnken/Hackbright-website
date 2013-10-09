@@ -55,6 +55,11 @@ HackbrightWebsite::Application.routes.draw do
   
   get "/mit_apply" => "pages#mit_apply"
   
+  get "/courses" => "pages#courses"
+  
+  get "/code_of_conduct_for_hackathons" => "pages#code_of_conduct_for_hackathons"
+  
+  
   root :to => "pages#home"
   
 

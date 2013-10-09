@@ -59,6 +59,9 @@ class PagesController < ApplicationController
   def hir
   end
   
+  def code_of_conduct_for_hackathons 
+  end
+  
   def instructor
   end
   
@@ -66,6 +69,9 @@ class PagesController < ApplicationController
   end
   
   def mit_apply
+  end
+  
+  def courses
   end
   
 end
