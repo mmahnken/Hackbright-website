@@ -62,6 +62,9 @@ class PagesController < ApplicationController
   def code_of_conduct_for_hackathons 
   end
   
+  def code_of_conduct_for_competitive_hackathons 
+  end
+  
   def instructor
   end
   
