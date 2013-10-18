@@ -61,6 +61,8 @@ HackbrightWebsite::Application.routes.draw do
   
   get "/code_of_conduct_for_competitive_hackathons" => "pages#code_of_conduct_for_competitive_hackathons"
   
+  get "/code_of_conduct" => "pages#code_of_conduct"
+  
   root :to => "pages#home"
   
 

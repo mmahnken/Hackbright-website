@@ -47,6 +47,9 @@ class PagesController < ApplicationController
   def partner
   end
   
+  def code_of_conduct
+  end
+  
   def sponsor
   end
   
