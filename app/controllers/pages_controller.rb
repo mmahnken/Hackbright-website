@@ -77,7 +77,7 @@ class PagesController < ApplicationController
   def mit_apply
   end
   
-  def courses
+  def show_all_the_visitors
   end
   
 end

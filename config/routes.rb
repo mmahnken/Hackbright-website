@@ -54,14 +54,26 @@ HackbrightWebsite::Application.routes.draw do
   get "/moms_in_tech" => "pages#moms_in_tech"
   
   get "/mit_apply" => "pages#mit_apply"
-  
-  get "/courses" => "pages#courses"
-  
+    
   get "/code_of_conduct_for_hackathons" => "pages#code_of_conduct_for_hackathons"
   
   get "/code_of_conduct_for_competitive_hackathons" => "pages#code_of_conduct_for_competitive_hackathons"
   
   get "/code_of_conduct" => "pages#code_of_conduct"
+  
+  get "/courses" => "courses#courses"
+  
+  get "/courses/fellowship" => "courses#fellowship"
+  
+  get "/courses/data_science_machine_learning" => "courses#data_science_machine_learning"
+  
+  get "/courses/data_science_analytics" => "courses#data_science_analytics"
+  
+  get "/show_all_the_visitors" => "pages#show_all_the_visitors"
+  
+  get "/courses/mobile_ios_frontend" => "courses#mobile_ios_frontend"
+  
+  get "/courses/javascript_node" => "courses#javascript_node"
   
   root :to => "pages#home"
   

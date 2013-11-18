@@ -1,4 +1,43 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header" style="margin-left:3%" >
+    <button type="button" class="navbar-toggle" data-toggle="dropdown" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/home"><img src="/assets/Hackbright.png" alt="Hackbright" style="scale-with-grid"></a>
+  </div>
 
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav"style="float:right;margin-top: 0px;">
+      <li><%= link_to "Courses", courses_path %></li>
+			<li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          </li><li><%= link_to "The Fellowship", about_path %></li>
+								<li><%= link_to "FAQ", faq_path %></li>
+			        </ul>
+			<li><%= link_to "Community", community_path %></li>
+			<li><a href="http://blog.hackbrightacademy.com">Blog</a></li>
+			<li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Involved<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+								<li><%= link_to "Employers", employers_path %></li>
+								<li><%= link_to "Community", get_involved_path %></li>
+			        </ul>
+			<li><a href="/apply" style="margin-top:-2px;color:white;background-color:#eb462a;"class="btn-flat btn-red">Apply Today!</a></li>
+			<% if user_signed_in? %>
+				<li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete, :class => "btn-flat btn-blue" %></li>
+			<% end %>
+    </ul>
+  
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<!-- OLD HEADER 
 <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky">	
 <header style="position: fixed;" class="is-sticky">
 
@@ -7,9 +46,10 @@
 			<div class="sixteen columns" style="margin-left:3%">        
 				<nav>
 						<ul>
-							<li style="float:left;"><a href="http://www.hackbrightacademy.com"><img src="assets/Hackbright.png" alt="Hackbright" style="scale-with-grid"></a></li>
+							<li style="float:left;"><a href="http://www.hackbrightacademy.com"><img src="/assets/Hackbright.png" alt="Hackbright" style="scale-with-grid"></a></li>
 						</ul>
 						<ul style="float:right;margin-top: 0px;">	
+							<li><%= link_to "Courses", courses_path %></li>
 							<li><%= link_to "About", about_path %></li>
 							<li><%= link_to "Community", community_path %></li>
 							<li><a href="http://blog.hackbrightacademy.com">Blog</a></li>
@@ -21,13 +61,12 @@
 								<li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete, :class => "btn-flat btn-blue" %></li>
 							<% end %>		
 							
-							
 						</ul>
 				</nav>
 
 		</div>
 			
-	</div> <!-- end topbar -->
+	</div> <!end OLD HEADER topbar -->
 
 
 	<div class="container">
