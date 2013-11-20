@@ -30,7 +30,9 @@
 	iframe.scale-with-grid {
   		max-width: 100%;
   	}
-
+.navbar-header {
+	min-width: 480px;
+}
 a:hover {
 	text-decoration: none;
 }
@@ -698,15 +700,6 @@ nav a:hover {
 	padding-top:22px;
 }
 
-.services-list {
-	text-align: center;
-	margin-top: 30px;
-}
-
-.services-list p, .process p {
-	font-size: 14px;
-	color: #737373;
-}
 
 p.subheader {
 	color: #b1b1b1;
@@ -825,21 +818,21 @@ h3.whatis {
 
 
 .transparent {
-position: absolute;
-top: 30%;
-left: 55%;
-width:30%;
-margin-top: 0px;
-font-size: 60px;
-font-weight: 100;
-line-height: 30px;
-color: white;
-background: #222;
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
-border-radius: 10px;
-opacity: 0.8;
-filter: alpha(opacity=50);
+	position: absolute;
+	top: 30%;
+	left: 55%;
+	width:30%;
+	margin-top: 0px;
+	font-size: 60px;
+	font-weight: 100;
+	line-height: 30px;
+	color: white;
+	background: #222;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 10px;
+	opacity: 0.8;
+	filter: alpha(opacity=50);
 }
 
 p.proj-name {
@@ -870,7 +863,6 @@ p.proj-type {
 	opacity: 1;
 }
 
-
 .portfolio3 p {
 	text-align: left;
 	line-height:17px;
@@ -892,8 +884,8 @@ p.proj-type {
 }
 
 .portfolio4 img {
-border: 4px solid rgba(0,0,0,0.1);
-opacity: .98;
+	border: 4px solid rgba(0,0,0,0.1);
+	opacity: .98;
 }
 
 p.proj-name2 {
@@ -944,16 +936,12 @@ img.proj-name5 {
 	margin-top:px;
 }
 
-
-
 p.proj-type2 {
 	font-size: 11px;
 	text-transform: uppercase;
 	color: #9c9c9c;
 	margin: 0;
 }
-
-
 
 /* #About
 ================================================== */
@@ -979,7 +967,6 @@ p.proj-type2 {
 .about-us {
 	padding-bottom: 30px;
 }
-
 
 /***** skills *****/
 
@@ -1086,7 +1073,6 @@ p.proj-type2 {
 }
 
 /***** team *****/
-
 .team {
 	padding-bottom: 40px;
 }
@@ -1127,11 +1113,8 @@ p.t-desc {
 	color: #666666;
 }
 
-
-
 /* #contact
 ================================================== */
-
 #contact {
 	background: #fff;
 	position: relative;
@@ -1174,8 +1157,6 @@ p.t-desc {
 	text-transform: uppercase;
 	margin-bottom: 2px;
 }
-
-
 
 
 .contact-form input.submit-button {
@@ -1311,167 +1292,167 @@ p.t-desc {
 /* #Media Queries
 ================================================== */
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {
-		
-		nav a {
-			padding: 7px;
-		}
-		
-		.contact-top {
-			display: none;
-		}
-		
-		.title {
-			position: relative;
-		}
-		
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	
+	nav a {
+		padding: 7px;
+	}
+	
+	.contact-top {
+		display: none;
+	}
+	
+	.title {
+		position: relative;
+	}
+	
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 1085px) and (max-width: 959px) {
+	
+	.title p {
+		font-size: 30px;
+	}
+	
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	
+	.topbar {
+		text-align: center;
+	}
+	
+	.top-social {
+		display: none;
+	}
+	
+	h1 {
+		font-size: 88px;
+	}
+	
+	h1.small {
+		font-size: 78px;
 	}
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 1085px) and (max-width: 959px) {
-		
-		.title p {
-			font-size: 30px;
-		}
-		
+	
+	.title p {
+		font-size: 25px;
 	}
+	
+	.caption {
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
 
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
-		
-		.topbar {
-			text-align: center;
-		}
-		
-		.top-social {
-			display: none;
-		}
-		
-		h1 {
-			font-size: 88px;
-		}
-		
-		h1.small {
-			font-size: 78px;
-		}
-
-		
-		.title p {
-			font-size: 25px;
-		}
-		
-		.caption {
-			margin-left: auto;
-			margin-right: auto;
-			width: 300px;
-
-		}
-		
-		span.line {
-			display: none;
-		}
-		
-		p.proj-type2 {
-			margin-bottom: 20px;
-		}
-		
-		
-		.team ul {
-			margin-bottom: 40px;
-		}
-		
-		
-		.contact-form input {
-			width: 100%;
-		}
-		
-		
 	}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		
-		h1 {
-			font-size: 70px;
-		}
-		
-		h1.small {
-			font-size: 60px;
-			line-height: normal;
-		}
-		
-		.testimonials h5 {
-			margin-top: 40px;
-		}
+	
+	span.line {
+		display: none;
 	}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-		
-		nav ul {
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-		}
-		
-		nav a {
-			padding: 4px;
-		}
-		
-		#intro {
-			height: 450px;
-		}
-		
-		.title {
-			position: relative;
-			padding-top: 80px;
-		}
-		
-		h1 {
-			font-size: 70px;
-			line-height: 30px;
-		
-		}
-		
-		h1.small {
-			font-size: 45px;
-			line-height: normal;
-		}
-		
-		.intro-arrow {
-			display: none;
-		}
-		
-		
-		.skill1 {
-			margin-left: -5px;
-		}
-		
-		.skill2 {
-			margin-left: -10px;
-		}
-		
-		.skill3 {
-			margin-left: -10px;
-		}
-		
-		.skill4 {
-			margin-left: 42px;
-		}
-		
-		.skill5 {
-			margin-left: 140px;
-		}
-		
-		.skill6 {
-			margin-left: 238px;
-		}
-		
-		.testimonials h5 {
-			margin-top: 40px;
-		}
+	
+	p.proj-type2 {
+		margin-bottom: 20px;
 	}
+	
+	
+	.team ul {
+		margin-bottom: 40px;
+	}
+	
+	
+	.contact-form input {
+		width: 100%;
+	}
+	
+	
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	h1 {
+		font-size: 70px;
+	}
+	
+	h1.small {
+		font-size: 60px;
+		line-height: normal;
+	}
+	
+	.testimonials h5 {
+		margin-top: 40px;
+	}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	
+	nav ul {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	
+	nav a {
+		padding: 4px;
+	}
+	
+	#intro {
+		height: 450px;
+	}
+	
+	.title {
+		position: relative;
+		padding-top: 80px;
+	}
+	
+	h1 {
+		font-size: 70px;
+		line-height: 30px;
+	
+	}
+	
+	h1.small {
+		font-size: 45px;
+		line-height: normal;
+	}
+	
+	.intro-arrow {
+		display: none;
+	}
+	
+	
+	.skill1 {
+		margin-left: -5px;
+	}
+	
+	.skill2 {
+		margin-left: -10px;
+	}
+	
+	.skill3 {
+		margin-left: -10px;
+	}
+	
+	.skill4 {
+		margin-left: 42px;
+	}
+	
+	.skill5 {
+		margin-left: 140px;
+	}
+	
+	.skill6 {
+		margin-left: 238px;
+	}
+	
+	.testimonials h5 {
+		margin-top: 40px;
+	}
+}
 
 
 /* #Font-Face
@@ -1688,63 +1669,64 @@ a.btn {
 	width: 100%;
 	margin-top:-75px;
 }
-	.logo-bar .inner1 {
-		width:100%;
-		height:100%;
-		background:url(logo-bar-highlight.png) no-repeat;
-	}
-		.logo-bar .inner1 ul {
-			overflow:hidden;
-		}
-			.logo-bar .inner1 ul li {
-				float:right;
-				text-align:center;
-				margin-top:15px;
-  		  margin-right:3.5%;
-  		  margin-bottom:0px;
-  		  margin-left:0px;
-			}
-				.logo-bar .inner1 ul li .logo-bar-logos-amazon {
-					background-position:0 -132px;
-					height:66px;
-					width:96px;
-				}
-				.logo-bar .inner1 ul li .logo-bar-logos-ogilvy {
-					background-position:0 -330px;
-					height:66px;
-					width:140px;
-				}
-				.logo-bar .inner1 ul li .logo-bar-logos-sony {
-					background-position:0 -264px;
-					height:66px;
-					width:150px;
-				}
-				.logo-bar .inner1 ul li .logo-bar-logos-unilever {
-					background-position:0 -66px;
-					height:66px;
-					width:110px;
-				}
-				.logo-bar .inner1 ul li .logo-bar-logos-universal {
-					background-position:0 0;
-					height:66px;
-					width:155px;
-				}
-				.logo-bar .inner1 ul li .logo-bar-logos-verizon_wireless {
-					background-position:0 -396px;
-					height:66px;
-					width:157px;
-				}
-				.logo-bar .inner1 ul li .logo-bar-logos-virgin {
-					background-position:0 -198px;
-					height:66px;
-					width:156px;
-				}
-				.logo-bar .inner1 ul li:first-child {
-					margin-left:20px;
-				}
-				.logo-bar .inner1 ul li em {
-					display:inline-block;
-				}
+.logo-bar .inner1 {
+	width:100%;
+	height:100%;
+	background:url(logo-bar-highlight.png) no-repeat;
+}
+.logo-bar .inner1 ul {
+	overflow:hidden;
+}
+
+.logo-bar .inner1 ul li {
+	float:right;
+	text-align:center;
+	margin-top:15px;
+	margin-right:3.5%;
+	margin-bottom:0px;
+    margin-left:0px;
+}
+.logo-bar .inner1 ul li .logo-bar-logos-amazon {
+	background-position:0 -132px;
+	height:66px;
+	width:96px;
+}
+.logo-bar .inner1 ul li .logo-bar-logos-ogilvy {
+	background-position:0 -330px;
+	height:66px;
+	width:140px;
+}
+.logo-bar .inner1 ul li .logo-bar-logos-sony {
+	background-position:0 -264px;
+	height:66px;
+	width:150px;
+}
+.logo-bar .inner1 ul li .logo-bar-logos-unilever {
+	background-position:0 -66px;
+	height:66px;
+	width:110px;
+}
+.logo-bar .inner1 ul li .logo-bar-logos-universal {
+	background-position:0 0;
+	height:66px;
+	width:155px;
+}
+.logo-bar .inner1 ul li .logo-bar-logos-verizon_wireless {
+	background-position:0 -396px;
+	height:66px;
+	width:157px;
+}
+.logo-bar .inner1 ul li .logo-bar-logos-virgin {
+	background-position:0 -198px;
+	height:66px;
+	width:156px;
+}
+.logo-bar .inner1 ul li:first-child {
+	margin-left:20px;
+}
+.logo-bar .inner1 ul li em {
+	display:inline-block;
+}
     				
     				
 /* The three rotated elements */
@@ -2786,9 +2768,6 @@ p.proj-type-separator {
 }
 
 
-/* Sharing Buttons */
-
-
 /* DETAILS BOX */
 .detailsbox {
 margin: 535px 95px;
@@ -2868,33 +2847,31 @@ border-radius: 0px 0px 5px 5px;
   z-index:-1000;
 }
 
-.home-image img{
-}
 
 /*ALERT*/
 
 .alert {
-padding: 8px 35px 8px 14px;
-margin-bottom: 20px;
-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-background-color: #fcf8e3;
-border: 1px solid #fbeed5;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
-color: #c09853;
-font-weight: bold;
+	padding: 8px 35px 8px 14px;
+	margin-bottom: 20px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #c09853;
+	font-weight: bold;
 }
 
 .close {
-float: right;
-cursor:pointer;
-font-size:20px;
-font-weight: bold;
-color: #000000;
-text-shadow: 0 1px 0 #ffffff;
-opacity: 0.2;
-filter: alpha(opacity=20);
+	float: right;
+	cursor:pointer;
+	font-size:20px;
+	font-weight: bold;
+	color: #000000;
+	text-shadow: 0 1px 0 #ffffff;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
 }
 
 /* alum-tiles */
