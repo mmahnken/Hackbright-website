@@ -31,7 +31,11 @@
   		max-width: 100%;
   	}
 .navbar-header {
-	min-width: 480px;
+	min-width: 345px;
+}
+.navbar {
+	max-height: 100px;
+
 }
 a:hover {
 	text-decoration: none;
@@ -521,8 +525,8 @@ nav a:hover {
 	position: relative;
 	z-index: -1000;
 	height: 600px;
-  text-align:center;
-  background-size:cover;
+    text-align:center;
+    background-size:cover;
 }
 
 .intro-home {
@@ -531,8 +535,9 @@ nav a:hover {
 	position: relative;
 	z-index: 800;
 	height: 70px;
-  text-align:center;
-  background-size:cover;
+  	text-align:center;
+	background-size:cover;
+	padding-top: 100px;
 }
 
 
@@ -2940,9 +2945,12 @@ height: 100%;
 }
 
 .hero-content {
+	display:table;
 	width: 834px;
 	float: left;
 	padding: 18px 0px 0 18px;
+	margin-left: auto ;
+	margin-right: auto ;
 	text-align: center;
 }
 
