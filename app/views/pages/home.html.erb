@@ -116,8 +116,8 @@
 				<p>10-weeks + From beginner to software engineer + Women only</p>
 				<form id='mailingListForm' name="getEmail" method="post" action="https://script.google.com/macros/s/AKfycbxGYlQ7GSbyQrY4zWzWDHNeAHAzvJQYwf_c_nJ6-tBli7LkNho/exec" target="hidden_iframe">
 					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-					<input type="email" name="Email" id="mailingListEmail" style="font-size:14px;" placeholder="Enter Email Address">
-					<input type="submit" class="btn-flat btn-blue" style="margin-left:0px;" value="Join the community"></li>
+					<input type="email" name="Email" id="mailingListEmail" style="font-size:14px;" placeholder="Enter Email Address"></input>
+					<input type="submit" class="btn-flat btn-blue" style="margin-left:0px;" value="Join the community"></input>
 				</form>
 			</div>
 			
@@ -363,31 +363,31 @@
 						<h4><span class="line"></span> Thank you to our sponsors <span class="line"></span></h3>
 					</div>
 					<div class="threehalf columns">
-							<img src="/assets/facebook-flat.png" class="scale-with-grid img-circle" alt="" />
+						<img src="/assets/facebook-flat.png" class="scale-with-grid img-circle" alt="" />
 						<p class="proj-name2">Facebook</p>
 						<p class="proj-type2">Scholarship Sponsor</p>
 					</div> <!-- end four columns -->
 					
 					<div class="threehalf columns">
-							<img src="/assets/zendesk.png" class="scale-with-grid img-circle" alt="" />
+						<img src="/assets/zendesk.png" class="scale-with-grid img-circle" alt="" />
 						<p class="proj-name2">Zendesk</p>
 						<p class="proj-type2">Scholarship Sponsor</p>
 					</div> <!-- end four columns -->
 					
 					<div class="threehalf columns">
-							<img src="/assets/heroku.png" class="scale-with-grid img-circle" alt="" />
+						<img src="/assets/heroku.png" class="scale-with-grid img-circle" alt="" />
 						<p class="proj-name2">Heroku</p>
 						<p class="proj-type2">Scholarship Sponsor</p>
 					</div> <!-- end four columns -->
 					
 					<div class="threehalf columns">
-							<img src="/assets/sm.png" class="scale-with-grid img-circle" alt="" />
+						<img src="/assets/sm.png" class="scale-with-grid img-circle" alt="" />
 						<p class="proj-name2">SurveyMonkey</p>
 						<p class="proj-type2">Scholarship Sponsor</p>
 					</div> <!-- end four columns -->
 					
 					<div class="threehalf columns">
-							<img src="/assets/stripe.png" class="scale-with-grid img-circle" alt="" />
+						<img src="/assets/stripe.png" class="scale-with-grid img-circle" alt="" />
 						<p class="proj-name2">Stripe</p>
 					</div> <!-- end four columns -->
 
@@ -413,9 +413,7 @@
 		e.preventDefault();
 		var mailListEmail = $(e.target).val();
 		
-		if(mailListEmail ==""){
-			alert("Please enter a valid email address.")
-		} else {
+		if(mailListEmail !=""){
 			$("#mailingListForm").submit();
 			alert("Thank you! We will reach out to you shortly.");
 		}
