@@ -3241,6 +3241,9 @@ border-radius: 0px 0px 5px 5px;
 	margin-bottom: 15px;
 }
 
+.in, .collapsing {
+	background-color: #fff;
+}
 .hero-content p {
 	font-size: 24px;
 	font-weight: 700;
