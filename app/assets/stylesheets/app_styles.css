@@ -206,7 +206,7 @@ iframe.scale-with-grid {
 	min-width: 480px;
 }
 .navbar {
-	max-height: 100px;
+	/*max-height: 100px;*/
 
 }
 a:hover {
