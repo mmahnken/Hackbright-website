@@ -35,15 +35,24 @@
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+	<!--Keen io tracking -->
+
+        <script src="http://cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.js"></script>
+        <script src="http://www.broofa.com/Tools/Math.uuid.js"></script>
+        <script src"/assets/javascripts/purl.js"></script>
+        <script src"/assets/javascripts/ua-parser.js"></script>
+        <script src"/assets/javascripts/jquery-cooke.js"></script>
+	    <!-- end -->
+
 </head>
 <body>
-
 	<!-- Primary Page Layout
 	================================================== -->
 <%= render :partial => "shared/header" %>	
 
 
 <%= yield %>
+
 
 
 <script type="text/javascript">
@@ -73,6 +82,118 @@
 	$('.dropdown-toggle').dropdown();
 	stLight.options({publisher: "bf545610-dbac-42e4-bc25-a3ea8a35076c", doNotHash: false, doNotCopy: false, hashAddressBar: false});
 
+</script>
+<script>
+// Include the Keen IO library for Analysis
+      var Keen=Keen||{configure:function(e){this._cf=e},addEvent:function(e,t,n,i){this._eq=this._eq||[],this._eq.push([e,t,n,i])},setGlobalProperties:function(e){this._gp=e},onChartsReady:function(e){this._ocrq=this._ocrq||[],this._ocrq.push(e)}};(function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https://":"http://")+"dc8na2hxrj29i.cloudfront.net/code/keen-2.1.0-min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+
+// Configure the Keen object with your Project ID and (optional) access keys.
+//Go add this to the template base after this!
+      Keen.configure({
+        projectId: "52a3adb436bf5a52b0000005",
+        writeKey: "7cea277f65346d7673774bce1406a9db283b2a3111dc398b96b114332364d9b546c2230385528d772cf0ef63070d874404ad5f73a00fbcc6bdf79438bcaa0d994754be0d542eeaa10ee78d0cc6c2f6652999e89ea1c12dc5dc3ff8d11ac341aa247d45ccdc022482d9b0283f07f66113", // required for sending events
+        readKey: "23086086d57c97f71adb82fff557deaf1f317d25479511c37c52855ca7c6595c38e6b0351b79b4a900b28df6456f942ebe13d973289fe7952673c70837c9c7e21ddd4bf04938ad9d0e407e6a444e9297b0a3d0c873a243f37ed5bdd2bf68d2480d9c5643d0a49d4d8df27f2800719816" // required for querying/charting events
+      });
+      
+//TODO: add an event for when the user scrolls past the first testimonial using waypoints (plugin)
+            $(document).ready(function(){
+
+                //Configure the jQuery cookie plugin to use JSON.
+                $.cookie.json = true;
+
+                //Set the amount of time a session should last.
+                var sessionExpireTime = new Date();
+                sessionExpireTime.setMinutes(sessionExpireTime.getMinutes()+30);
+
+                //Check if we have a session cookie:
+                var session_cookie = $.cookie("session_cookie");
+
+                //If it is undefined, set a new one.
+                if(session_cookie == undefined){
+                    $.cookie("session_cookie", {
+                        id: Math.uuid()
+                    }, {
+                        expires: sessionExpireTime,
+                        path: "/" //Makes this cookie readable from all pages
+                    });
+                }
+                //If it does exist, delete it and set a new one with new expiration time
+                else{
+                    $.removeCookie("session_cookie", {
+                        path: "/"
+                    });
+                    $.cookie("session_cookie", session_cookie, {
+                        expires: sessionExpireTime,
+                        path: "/"
+                    });
+                }
+
+                var permanent_cookie = $.cookie("permanent_cookie");
+
+                //If it is undefined, set a new one.
+                if(permanent_cookie == undefined){
+                    $.cookie("permanent_cookie", {
+                        id: Math.uuid()
+                    }, {
+                        expires: 3650, //10 year expiration date
+                        path: "/" //Makes this cookie readable from all pages
+                    });
+                }
+
+                //Add a pageview event in Keen IO
+                var fullUrl = window.location.href;
+                var parsedUrl = $.url(fullUrl);
+                var parser = new UAParser();
+
+                var eventProperties = {
+                    session_id: $.cookie("session_cookie")["id"],
+                    url: {
+                        source: parsedUrl.attr("source"),
+                        protocol: parsedUrl.attr("protocol"),
+                        domain: parsedUrl.attr("host"),
+                        port: parsedUrl.attr("port"),
+                        path: parsedUrl.attr("path"),
+                        anchor: parsedUrl.attr("anchor")
+                    },
+                    user_agent: {
+                        browser: parser.getBrowser(),
+                        engine: parser.getEngine(),
+                        os: parser.getOS()
+                    },
+                    permanent_tracker: $.cookie("permanent_cookie")["id"]
+                };
+
+                /*
+                //If you know that the user is currently logged in, add information about the user.
+                eventProperties["user"] = {
+                    id: "",
+                    signupDate: ""
+                    etc: ".."
+                };
+                */
+
+                //Add information about the referrer of the same format as the current page
+                var referrer = document.referrer;
+                referrerObject = null;
+
+                if(referrer != undefined){
+                    parsedReferrer = $.url(referrer);
+
+                    referrerObject = {
+                        source: parsedReferrer.attr("source"),
+                        protocol: parsedReferrer.attr("protocol"),
+                        domain: parsedReferrer.attr("host"),
+                        port: parsedReferrer.attr("port"),
+                        path: parsedReferrer.attr("path"),
+                        anchor: parsedReferrer.attr("anchor")
+                    }
+                }
+
+                eventProperties["referrer"] = referrerObject;
+
+                Keen.addEvent("pageviews", eventProperties)
+
+            }); 
 </script>
 <%= render :partial => "shared/footer" %>	
 

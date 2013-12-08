@@ -2207,3 +2207,34 @@ $(function() {
     $(".newsletter_email input").val('');
   });
 });
+
+// Include the Keen IO library for Analysis
+      var Keen=Keen||{configure:function(e){this._cf=e},addEvent:function(e,t,n,i){this._eq=this._eq||[],this._eq.push([e,t,n,i])},setGlobalProperties:function(e){this._gp=e},onChartsReady:function(e){this._ocrq=this._ocrq||[],this._ocrq.push(e)}};(function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https://":"http://")+"dc8na2hxrj29i.cloudfront.net/code/keen-2.1.0-min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+
+// Configure the Keen object with your Project ID and (optional) access keys.
+//Go add this to the template base after this!
+      Keen.configure({
+        projectId: "52a3adb436bf5a52b0000005",
+        writeKey: "7cea277f65346d7673774bce1406a9db283b2a3111dc398b96b114332364d9b546c2230385528d772cf0ef63070d874404ad5f73a00fbcc6bdf79438bcaa0d994754be0d542eeaa10ee78d0cc6c2f6652999e89ea1c12dc5dc3ff8d11ac341aa247d45ccdc022482d9b0283f07f66113", // required for sending events
+        readKey: "23086086d57c97f71adb82fff557deaf1f317d25479511c37c52855ca7c6595c38e6b0351b79b4a900b28df6456f942ebe13d973289fe7952673c70837c9c7e21ddd4bf04938ad9d0e407e6a444e9297b0a3d0c873a243f37ed5bdd2bf68d2480d9c5643d0a49d4d8df27f2800719816" // required for querying/charting events
+      });
+      
+//add an event for when the user scrolls past the first testimonial
+$(".target").on("scroll", function() {
+  console.log(this);
+});
+
+ Keen.onChartsReady(function() {   // The onChartsReady function draws charts as soon as the page is loaded.
+            
+            // [] [] Item 1 [] [] [] [] [] [] [] [] [] [] [] [] 
+            // The first widget here is almost finished. Just insert your collection name and it should work.
+            // This is a counter for the total number of button clicks (all time running total).
+
+            var metric1 = new Keen.Metric("bubbles", {
+                analysisType: "count"  // Query parameters go in here. In this example we just have one (analysisType).
+            });
+
+            metric1.draw(document.getElementById("chart1"), {  // 
+                label: "Total Bubbles"
+            });
+
